@@ -25,19 +25,42 @@ __author__ = 'Susan Sim'
 __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
-#just a preliminary attempt at wrapping my head around this..
-#I don't think Im very good at this...   ...yet...
+#I became obsessed with having an interactive program
+#The first section is intended to calculate:
+# the full cost of 2000 shares at 900 each and how much commission was paid
 sharePrice = raw_input('How much did Lakshmi pay per share?')
 brokerCost = raw_input('What percentage did she pay her broker?')
 print ('commission per share:')
 print (float(sharePrice)*0.03)
 shareQuantity = raw_input('How many shares did Lakshmi buy?')
-totalCost = (float(sharePrice)*float(shareQuantity))
+print ('total amount paid for shares:')
+print (float(sharePrice)*float(shareQuantity))
 commissionPaid = (float(sharePrice)*float(shareQuantity))*0.03
-moneyLeft = (float(totalCost-commissionPaid))
-print ('total cost =')+ str(totalCost)
-#print (float(sharePrice)*float(shareQuantity))
-print ('This means Lakshmi paid her broker a total of:')
-print commissionPaid
-print ('This leaves Lakshmi with:')
-print moneyLeft
+print ("Stockbrocker's commission")
+print (commissionPaid)
+print ('total cost:')
+print ((float(sharePrice)*float(shareQuantity)+commissionPaid))
+#this second section uses the same calculations to determine
+#the totals of Lakshmi's sales
+shareSalePrice = raw_input('How much did Lakshmi sell her shares for?')
+newBrokerCost = raw_input('What percentage did she pay her broker?')
+print ('commission per share:')
+print (float(shareSalePrice)*0.03)
+shareSaleQuantity = raw_input('How many shares did Lakshmi sell?')
+print ('total amount paid for shares:')
+print (float(shareSalePrice)*float(shareSaleQuantity))
+saleCommissionPaid = (float(shareSalePrice)*float(shareSaleQuantity))*0.03
+print ("Stockbrocker's commision")
+print (saleCommissionPaid)
+
+print ("total cost:")
+print ((float(shareSalePrice)*float(shareSaleQuantity))+(saleCommissionPaid))
+moneyLeft = ((float(sharePrice)*float(shareQuantity)+commissionPaid))\
+-((float(shareSalePrice)*float(shareSaleQuantity))+(saleCommissionPaid))
+print ('Did Lakshmi make any money?')
+if moneyLeft>=0.0:
+    print ('Looks like Lakshmi made money')
+else:
+    print ('Looks like Lakshmi lost money')
+
+
