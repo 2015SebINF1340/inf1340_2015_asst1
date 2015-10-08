@@ -18,7 +18,7 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs: yes, no
+    Inputs: Y, N
 
     Expected Outputs:
     -Is the car silent when you turn the key?
@@ -33,7 +33,7 @@ def diagnose_car():
     -Get it in for service.
     -Check to ensure the choke is opening and closing.
 
-    Errors:
+    Errors: Unexpected inputs (e.g. "Yes" or "No") will result in an error message
 
     """
 
