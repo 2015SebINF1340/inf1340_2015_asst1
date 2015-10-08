@@ -25,29 +25,30 @@ def name_that_shape():
 
     """
 #decided to add the values to a dictionary
-name_that_shape()
 
-dict = {3:'triangle', 4:'tetragon', 5:'pentagon',6:'hexagon',7:'heptagon',8:'octagon',9:'nonagon',10:'decagon'}
-guess =(raw_input('How many sides does your polygon have?'))
-if (guess)=="3":
-    print ('that is called a:')+ dict[3]
-if guess=="4":
-    print ('that is called a:')+ dict[4]
-if guess=="5":
-    print ('that is called a:')+ dict[5]
-if guess=="6":
-    print ('that is called a:')+ dict[6]
-if guess=="7":
-    print ('that is called a:')+ dict[7]
-if guess=="8":
-    print ('that is called a:')+ dict[8]
-if guess=="9":
-    print ('that is called a:')+ dict[9]
-if guess=="10":
-    print ('that is called a:')+ dict[10]
-if guess>"10":
-    print ('error')
+    dict = {3:'triangle', 4:'quadrilateral', 5:'pentagon',6:'hexagon',7:'heptagon',8:'octagon',9:'nonagon',10:'decagon'}
+    guess = (raw_input('How many sides does your polygon have?'))
+    if (guess)=="3":
+        print dict[3]
+    elif (guess)=="4":
+        print dict[4]
+    elif (guess)=="5":
+        print dict[5]
+    elif (guess)=="6":
+        print dict[6]
+    elif (guess)=="7":
+        print dict[7]
+    elif (guess)=="8":
+        print dict[8]
+    elif (guess)=="9":
+        print dict[9]
+    elif (guess)=="10":
+        print dict[10]
+    else:
+        print ('Error')
 
+
+# name_that_shape()
 # you have to be able to use the program to discern whether the input is one of the
 #numbers from 1 to 10.
 #if it isn't, the program should print: Error
