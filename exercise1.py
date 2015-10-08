@@ -25,42 +25,47 @@ __author__ = 'Susan Sim'
 __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
-#I became obsessed with having an interactive program
-#The first section is intended to calculate:
-# the full cost of 2000 shares at 900 each and how much commission was paid
-sharePrice = raw_input('How much did Lakshmi pay per share?')
-brokerCost = raw_input('What percentage did she pay her broker?')
-print ('commission per share:')
-print (float(sharePrice)*0.03)
-shareQuantity = raw_input('How many shares did Lakshmi buy?')
-print ('total amount paid for shares:')
-print (float(sharePrice)*float(shareQuantity))
-commissionPaid = (float(sharePrice)*float(shareQuantity))*0.03
-print ("Stockbrocker's commission")
-print (commissionPaid)
-print ('total cost:')
-print ((float(sharePrice)*float(shareQuantity)+commissionPaid))
-#this second section uses the same calculations to determine
-#the totals of Lakshmi's sales
-shareSalePrice = raw_input('How much did Lakshmi sell her shares for?')
-newBrokerCost = raw_input('What percentage did she pay her broker?')
-print ('commission per share:')
-print (float(shareSalePrice)*0.03)
-shareSaleQuantity = raw_input('How many shares did Lakshmi sell?')
-print ('total amount paid for shares:')
-print (float(shareSalePrice)*float(shareSaleQuantity))
-saleCommissionPaid = (float(shareSalePrice)*float(shareSaleQuantity))*0.03
-print ("Stockbrocker's commision")
-print (saleCommissionPaid)
+money = 1000.00
+print(money)
 
-print ("total cost:")
-print ((float(shareSalePrice)*float(shareSaleQuantity))+(saleCommissionPaid))
-moneyLeft = ((float(sharePrice)*float(shareQuantity)+commissionPaid))\
--((float(shareSalePrice)*float(shareSaleQuantity))+(saleCommissionPaid))
-print ('Did Lakshmi make any money?')
-if moneyLeft>=0.0:
-    print ('Looks like Lakshmi made money')
+#Input the number of shares bought
+#Input the cost of each share
+#Calculate the total stock bought
+#Calculate the stock broker's commission
+#Calculate the total bought
+
+number_share = 2000.0
+price_share = 900.0
+cost_share = (number_share * price_share)
+broker_commission = .03 * (number_share * price_share)
+bought_total = cost_share + broker_commission
+
+#print(cost_share)
+#print(broker_commission)
+#print(bought_total)
+
+#Input the number of shares sold
+#Input the price of each share sold
+#Calculate the stockbroker's commission
+
+number_share_sold = 2000.0
+price_share_sold = 942.75
+cost_share_sold = (number_share_sold * price_share_sold)
+broker_commission_sold = .03 * (number_share_sold * price_share_sold)
+sold_total = cost_share_sold + broker_commission_sold
+
+#print(cost_share_sold)
+#print(broker_commission_sold)
+#print(sold_total)
+
+#Calculate amount Lakshmi had left after selling and paying the broker
+sold_stock = cost_share_sold - cost_share
+remainder = sold_stock - (broker_commission_sold + broker_commission)
+print(remainder)
+
+if remainder > 0.0:
+    print("Lakshmi made a profit")
 else:
-    print ('Looks like Lakshmi lost money')
+    print("Lakshmi lost money")
 
 
