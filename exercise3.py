@@ -21,17 +21,17 @@ def diagnose_car():
     Inputs: yes, no
 
     Expected Outputs:
-    -Is the car silent when you enter the key?
+    -Is the car silent when you turn the key?
     -Are the battery terminals corroded?
-    -Clean the terminals and try starting the car again
-    -Replace the cables and try again
+    -Clean terminals and try starting again.
+    -Replace cables and try again.
     -Does the car make a clicking noise?
     -Does the car crank up but fail to start?
-    -Check spark plug connections
-    -Does the engine start then die?
+    -Check spark plug connections.
+    -Does the engine start and then die?
     -Does your car have fuel injection?
-    -Get it in for service
-    -Check to ensure the choke is opening and closing
+    -Get it in for service.
+    -Check to ensure the choke is opening and closing.
 
     Errors:
 
