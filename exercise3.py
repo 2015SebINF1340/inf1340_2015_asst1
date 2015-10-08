@@ -30,7 +30,6 @@ def diagnose_car():
     clicking_noise = (raw_input("Does the car crank up but fail to start?"))
     engine_start = (raw_input("Does the engine start and then die?"))
     fuel_injection = (raw_input("Does you car have fuel injection"))
-
     if car_silent == "yes":
         print(batteries_corroded)
     if batteries_corroded == "yes":
