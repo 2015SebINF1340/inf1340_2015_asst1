@@ -37,8 +37,7 @@ def diagnose_car():
         print("Clean terminals and try starting again")
     else:
         print("Replace cables and try again.")
-
-    if car_silent == "no":
+     if car_silent == "no":
         print(clicking_noise)
     if clicking_noise == "yes":
         print("Check spark plug connections")
