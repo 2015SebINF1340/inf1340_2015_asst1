@@ -25,8 +25,22 @@ def diagnose_car():
     Errors:
 
     """
+    car_silent = (raw_input("Is the car silent when you enter the key?"))
+    batteries_corroded = (raw_input("Are the battery terminals corroded?"))
+    clicking_noise = (raw_input("Does the car crank up but fail to start?"))
+    engine_start = (raw_input("Does the engine start and then die?"))
+    fuel_injection = (raw_input("Does you car have fuel injection"))
 
-    print("The battery cables may be damaged. Replace cables and try again.")
+    if car_silent == "y":
+        print(batteries_corroded)
+            if batteries_corroded == "y":
+                print("Clean terminals and try starting again.")
+        else:
+            print("Replace cables")
+
+
+
+diagnose_car()
 
 
 diagnose_car()
