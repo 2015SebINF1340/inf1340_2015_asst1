@@ -19,7 +19,7 @@ def name_that_shape():
 
     Inputs: 3, 4, 5, 6, 7, 8, 9, 10 and any number >10
 
-    Expected Outputs: triangle, square, pentagon, hexagon, heptagon, octagon, nonagon, decagon and error
+    Expected Outputs: triangle, quadrilateral, pentagon, hexagon, heptagon, octagon, nonagon, decagon and error
 
     Errors: numbers >10 will result in an error message.
 
