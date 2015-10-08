@@ -21,11 +21,12 @@ def name_that_shape():
 
     Expected Outputs: triangle, square, pentagon, hexagon, heptagon, octagon, nonagon, decagon and error
 
-    Errors: numbers >10 will result in an error message. 
+    Errors: numbers >10 will result in an error message.
 
     """
 #decided to add the values to a dictionary
 name_that_shape()
+
 dict = {3:'triangle', 4:'tetragon', 5:'pentagon',6:'hexagon',7:'heptagon',8:'octagon',9:'nonagon',10:'decagon'}
 guess =(raw_input('How many sides does your polygon have?'))
 if (guess)=="3":
