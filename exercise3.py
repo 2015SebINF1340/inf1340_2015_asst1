@@ -32,8 +32,9 @@ def diagnose_car():
     -Does your car have fuel injection?
     -Get it in for service.
     -Check to ensure the choke is opening and closing.
+    -Engine is not getting enough fuel. Clean fuel pump.
 
-    Errors: Unexpected inputs (e.g. "Yes" or "No") will result in an error message
+    Errors: Unexpected inputs (e.g. Yes , No) will result in an error message
 
     """
 
